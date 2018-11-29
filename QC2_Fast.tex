@@ -1,0 +1,33 @@
+\section{QC2-Fast} \label{sec:qc2_fast}
+QC2-Fast는 CMS에서 정립한 포일 검증법으로 포일의 청결도를 시험하기 위해 고안되었다. QC2-Fast을 수행하기 위해 \SI{10}{\minute}이 소요되어 QC2-Long에 비해 짧은 시간이 필요하기 때문에 ``Fast''라고 부른다. 
+
+Megger MIT41/2 절연 시험기를 이용해 \uline{포일에 \mbox{\SI{500}{\volt}}의 전압을 걸은 후 \mbox{\SI{10}{\minute}}에 걸쳐 포일 임피던스와 방전 횟수를 기록}한다. 기록은 준비된 Excel 템플릿을 이용한다. 먼저 실험 환경의 \uline{상대습도와 온도를 기록}한다. 전압을 걸은 후 \uline{\mbox{\SI{30}{\second}}, \mbox{\SI{1}{\minute}}, \mbox{\SI{2}{\minute}}, \mbox{\SI{3}{\minute}}, \dots, \mbox{\SI{10}{\minute}}이 지나는 순간의 임피던스를 기록}한다. \uline{초기 \mbox{\SI{30}{\second}} 이후부터 매 시간 간격 사이에 일어난 방전 횟수를 시간 간격의 뒤 시간에 기록한다.} 즉, \SI{30}{\second}부터 \SI{1}{\minute} 사이의 방전 횟수를 \SI{1}{\minute}에 기록하고, \SI{1}{\minute}부터 \SI{2}{\minute}분 사이의 방전 횟수를 \SI{2}{\minute}분에 기록한다. \uline{최종적인 포일 임피던스가 \mbox{\SI{10}{\giga\ohm}} 이상 그리고 방전 속도는 분당 1회 이하가 되어야 한다.}
+
+표 \ref{tab:example_qc2_fast_result}은 일반적인 QC2-Fast 검증 결과의 예이다. 축전이 진행되면서 저항이 시간에 따라 올라가는 것이 정상적인 현상이다. 방전이 일어나면서 포일에 앉은 오염물이 타고 이로 인해 저항이 갑자기 올라가는 경우도 흔하다.
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ 시간 (\SI{}{\minute}) & 전압(\SI{}{\volt}) & 저항 (\SI{}{\giga\ohm}) & 전류 (\SI{}{\nano\ampere}) & 방전 횟수 & 총 방전 횟수\\
+\hline
+0.5 & 500 & 3.11 & 176 & - & 0\\
+1   & 500 & 3.73 & 147 & 3 & 3\\
+2   & 500 & 5.9  & 93  & 3 & 6\\
+3   & 500 & 7.6  & 72  & 1 & 7\\
+4   & 500 & 8    & 68  & 2 & 9\\
+5   & 500 & 8.5  & 64  & 1 & 10\\
+6   & 500 & 9.2  & 59  & 0 & 10\\
+7   & 500 & 9.6  & 57  & 0 & 10\\
+8   & 500 & 10.5 & 52  & 0 & 10\\
+9   & 500 & 10   & 55  & 0 & 10\\
+10  & 500 & 11   & 50  & 0 & 10\\
+\hline
+\end{tabular}
+\caption[일반적인 QC2-Fast 검증 결과의 예]{일반적인 QC2-Fast 검증 결과의 예.}
+  \label{tab:example_qc2_fast_result}
+  \end{table}
+
+\uline{만약 임피던스가 낮거나 방전이 많이 일어나는 경우, 메카로에 해당 포일의 재세척을 의뢰한다.} 만약 방전 속도는 만족스러우나 최종적인 포일 임피던스가 수 \SI{}{\giga\ohm} 수준이라면 세척 과정 중 고압 DI수 살수 과정만 진행하여도 무방하다.
+
+
