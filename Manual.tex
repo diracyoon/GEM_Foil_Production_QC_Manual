@@ -5,8 +5,9 @@
 \usepackage{romannum}
 \usepackage{subfig}
 \usepackage{graphicx}
-\usepackage{siunitx}
+\usepackage[separate-uncertainty=true]{siunitx}
 %\usepackage[toc]{appendix}
+\usepackage{rotating}
 \usepackage[pdfencoding=auto, pdftex]{hyperref}
 \input glyphtounicode \pdfgentounicode=1
 
@@ -16,7 +17,7 @@
 
 \title{대형 GEM 포일의 품질검증법 및 배송을 위한 포장법에 관한 매뉴얼}
 \author{윤인석}
-\date{2018년 11월 29일}
+\date{2020년 02월 29일}
 
 %%%%%%%%%%
 
@@ -44,6 +45,8 @@
 \include{Packaging}
 
 \appendix
-  \include{QC2_Fast}
+\include{Chart}
+\include{Spec}
+%\include{QC2_Fast}
 
 \end{document}
